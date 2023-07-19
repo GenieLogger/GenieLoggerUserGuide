@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven() {
+            url "https://gaterepo.gigagenie.ai:52037/repository/genielog-releases/"
+        }
+    }
+}
+rootProject.name = "GenieLoggerSample"
+include ':app'
